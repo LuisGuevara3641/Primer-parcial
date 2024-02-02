@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 float num1, num2, resultado;
-char letra;
 float suma(float a, float b);
 float resta(float a, float b);
 float multiplicacion(float a, float b);
@@ -28,7 +27,7 @@ float suma(float a, float b)
 {
     resultado = a + b;
     return resultado;
-}
+}   
 
 float resta(float a, float b)
 {
@@ -44,6 +43,13 @@ float multiplicacion(float a, float b)
 
 float division(float a, float b)
 {
-    resultado = a / b;
-    return resultado;
+    if (b == 0)
+    {
+        cout << "(No se puede dividir por 0)";
+    }
+    else
+    {
+        resultado = a / b;
+        return resultado;
+    }
 }
