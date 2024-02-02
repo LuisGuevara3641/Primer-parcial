@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 float num1, num2, resultado;
-float suma(float a, float b);
+float suma(float a, float b); // Declaracion de las funciones
 float resta(float a, float b);
 float multiplicacion(float a, float b);
 float division(float a, float b);
@@ -23,25 +23,25 @@ int main()
     return 0;
 }
 
-float suma(float a, float b)
+float suma(float a, float b) //  Definicion de la funcion Suma
 {
     resultado = a + b;
     return resultado;
 }   
 
-float resta(float a, float b)
+float resta(float a, float b) //  Definicion de la función Resta
 {
     resultado = a - b;
     return resultado;
 }
 
-float multiplicacion(float a, float b)
+float multiplicacion(float a, float b) // Definicion de la Funcion Multiplicacion
 {
     resultado = a * b;
     return resultado;
 }
 
-float division(float a, float b)
+float division(float a, float b) // Definicion de la Funcion Division
 {
     if (b == 0)
     {
