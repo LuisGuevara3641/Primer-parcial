@@ -166,12 +166,20 @@ void operacionesAritmeticas(int num1,int num2)
         resultadoSum = num1 + num2; // El resultado de todos los números
         resultadoRes = num1 - num2;
         resultadoMul = num1 * num2;
-        resultadoDiv = num1 / num2;
 
     cout << "La suma es: " << resultadoSum << endl;    
     cout << "La resta es: " << resultadoRes << endl;    
-    cout << "La multiplicacion es: " << resultadoMul << endl;    
-    cout << "La division es: " << resultadoDiv << endl;   
+    cout << "La multiplicacion es: " << resultadoMul << endl;
+
+    if (num2 == 0)
+    {
+        cout << "La division es: (No se puede dividir por 0)" << endl;
+    }    
+    else 
+    {
+        resultadoDiv = num1 / num2;
+        cout << "La division es: " << resultadoDiv << endl; //  La división no da decimales, ya que, se solicitaron numeros enteros (lo ideal hubiese sido, que los dos números ingresados fuera float, pero las instrucciones pedian enteros).
+    }
 
     if (num1 == num2)
     {
@@ -227,3 +235,5 @@ void esBisiesto(int anio)
         cout << anio << " Es anio bisiesto" << endl; // Si el año es divisible entre 4, es bisiesto
     }
 }
+
+
