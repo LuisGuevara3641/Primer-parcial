@@ -16,7 +16,7 @@ void gotoxy(int x, int y)
 }
 void numeroPrimo(int num1);
 float raizCuadrada(float num1);
-void operacionesAritmeticas(int num1,int num2);
+void operacionesAritmeticas(float num1,float num2);
 void sumaenteros(int num1);
 int main()
 {
@@ -96,7 +96,7 @@ int main()
             do
             {
                 system("cls");
-                int num1, num2;
+                float num1, num2;
 
                 cout << "Ingrese su primer numero: ";
                 cin >> num1;
@@ -192,7 +192,7 @@ float raizCuadrada(float num1)
     return sqrt(num1);
 }
 
-void operacionesAritmeticas(int num1,int num2)
+void operacionesAritmeticas(float num1,float num2)
 {
     float resultadoSum, resultadoRes, resultadoDiv, resultadoMul;
         
@@ -211,7 +211,7 @@ void operacionesAritmeticas(int num1,int num2)
     else 
     {
         resultadoDiv = num1 / num2;
-        cout << "La division es: " << resultadoDiv << endl; //  La división no da decimales, ya que, se solicitaron numeros enteros (lo ideal hubiese sido, que los dos números ingresados fuera float, pero las instrucciones pedian enteros).
+        cout << "La division es: " << resultadoDiv << endl; 
     }
 
 }
